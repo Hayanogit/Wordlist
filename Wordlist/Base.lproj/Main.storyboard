@@ -11,7 +11,7 @@
         <!--一覧-->
         <scene sceneID="ULc-VK-5ps">
             <objects>
-                <tableViewController id="JDR-o1-J86" customClass="ListTableViewController" sceneMemberID="viewController">
+                <tableViewController id="JDR-o1-J86" customClass="ListTableViewController" customModule="Wordlist" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="V3y-hi-Rad">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="一覧" id="fpH-nS-tW0">
-                        <barButtonItem key="leftBarButtonItem" title="もどる" id="b9F-rV-vs5"/>
+                        <barButtonItem key="leftBarButtonItem" title="もどる" id="b9F-rV-vs5">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" identifier="ViewController" id="5PO-IE-CVa"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3I1-hr-5Hd">
                             <connections>
                                 <segue destination="oZ9-VK-2Jt" kind="show" id="YqR-0o-Y2V"/>
@@ -103,7 +107,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Wordlist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My単語帳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVb-h7-a8n">

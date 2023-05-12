@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ListTableTableViewController: UITableViewController {
+class ListTableViewController: UITableViewController {
 
     var wordArray:[Dictionary<String,String>] = []
     let saveData = UserDefaults.standard
